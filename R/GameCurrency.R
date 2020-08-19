@@ -12,6 +12,7 @@
 #'     If the matrix of transactions is over- or under-determined, then the values of goods
 #'     are returned which minimizes the squared error between the actual and calculated total values
 #'     of the transaction.
+#' @export
 valueGoods <- function(transactions) {
   d <- transactions
   m <- t(d[,-1]) # Without the first column which is base currency
